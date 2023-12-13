@@ -51,7 +51,7 @@ func Setup(configFile string, info *SdkEnvInfo) (*fabsdk.FabricSDK, error) {
 }
 
 func CreateAndJoinChannel(info *SdkEnvInfo) error {
-	fmt.Println(">> 开始创建通道......")
+	fmt.Println(">> Start Creating Channel......")
 	if len(info.Orgs) == 0 {
 		return fmt.Errorf("通道组织不能为空，请提供组织信息")
 	}
@@ -74,7 +74,7 @@ func CreateAndJoinChannel(info *SdkEnvInfo) error {
 
 	fmt.Println(">> Channel created successfully")
 
-	fmt.Println(">> 加入通道......")
+	fmt.Println(">> Joining Channel......")
 	for _, org := range info.Orgs {
 		// 加入通道
 		// Org peers join channel

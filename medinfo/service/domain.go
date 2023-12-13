@@ -56,7 +56,7 @@ func regitserEvent(client *channel.Client, chaincodeID, eventID string) (fab.Reg
 func eventResult(notifier <-chan *fab.CCEvent, eventID string) error {
 	select {
 	case ccEvent := <-notifier:
-		fmt.Printf("接收到链码事件: %v\n", ccEvent)
+		fmt.Printf("Chaincode event received: %v\n", ccEvent)
 	case <-time.After(time.Second * 20):
 		return fmt.Errorf("不能根据指定的事件ID接收到相应的链码事件(%s)", eventID)
 	}
