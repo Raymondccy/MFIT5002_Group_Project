@@ -151,7 +151,7 @@ func (app *Application) FindCertByNoAndName(w http.ResponseWriter, r *http.Reque
 	var med = service.Medinfo{}
 	json.Unmarshal(result, &med)
 
-	fmt.Println("根据证书编号与姓名查询信息成功：")
+	fmt.Println("Query information based on certificate number and name successfully:")
 	fmt.Println(med)
 
 	data := &struct {
