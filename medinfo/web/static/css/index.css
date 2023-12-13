@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 body {
   background: #F1F1F1;
   color: #333333;
@@ -38,7 +39,7 @@ body {
 }
 
 .h_m_div3 {
-  width: 260px;
+  width: 388px;
   background: url(https://t3.chei.com.cn/chsi/images/2014/vline.gif) repeat-y right;
   float: left;
   display: inline;
@@ -47,7 +48,7 @@ body {
 }
 
 .h_m_div3_nob {
-  width: 259px;
+  width: 386px;
   background: none;
 }
 
@@ -58,7 +59,8 @@ body {
 
 .h_m_div3_t {
   padding: 10px 0;
-  width: 218px;
+  width: 325px;
+  height: 125.8px;
   margin: 0 auto 10px auto;
   border-bottom: 1px dotted #DDDDDD;
   word-break: break-word;
@@ -93,7 +95,7 @@ a:link, a:visited {
 }
 
 .h_m_div3_ul {
-  width: 218px;
+  width: 325px;
   margin: 0 auto;
   padding-bottom: 15px;
   position: relative;
@@ -113,7 +115,7 @@ a:link, a:visited {
 }
 .h_m_div3_ul li {
   /* width: 90px; */
-  width: 109px;
+  width: 160px;
   padding-left: 19px;
   float: left;
   display: inline;

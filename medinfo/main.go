@@ -62,24 +62,24 @@ func main() {
 	}
 
 	// invoke chaincode set status
-	fmt.Println(">> 通过链码外部服务设置链码状态......")
+	fmt.Println(">> Set chaincode status through chaincode external service......")
 
 	med := service.Medinfo{
-		Name: "张三",
-		Gender: "男",
-		Nation: "汉",
+		Name: "Vince Kingsley",
+		Gender: "Male",
+		Nation: "China",
 		EntityID: "101",
-		Place: "北京",
-		BirthDay: "1991年01月01日",
-		EnrollDate: "2009年9月",
-		GraduationDate: "2013年7月",
-		SchoolName: "中国政法大学",
-		Major: "社会学",
-		QuaType: "普通",
-		Length: "四年",
-		Mode: "普通全日制",
-		Level: "本科",
-		Graduation: "毕业",
+		Place: "Hong Kong",
+		BirthDay: "2002/01/01",
+		EnrollDate: "Phone no.: 12345678",
+		GraduationDate: "170cm",
+		SchoolName: "100kg",
+		Major: "Null",
+		QuaType: "Null",
+		Length: "Medications: Metformin",
+		Mode: "Allergies: Penicillin, Peanuts.",
+		Level: "Blood: A+",
+		Graduation: "Sharing Status: true",
 		CertNo: "111",
 		Photo: "/static/photo/11.png",
 	}
@@ -93,7 +93,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err.Error())
 	}else {
-		fmt.Println("信息发布成功, 交易编号为: " + msg)
+		fmt.Println("The information was released successfully, the transaction number is:" + msg)
 	}
 
 	result, err := serviceSetup.FindMedInfoByEntityID("101")
@@ -102,7 +102,7 @@ func main() {
 	} else {
 		var med service.Medinfo
 		json.Unmarshal(result, &med)
-		fmt.Println("根据身份证号码查询信息成功：")
+		fmt.Println("Query information based on ID number successfully:")
 		fmt.Println(med)
 	}
 

@@ -1,4 +1,6 @@
 # Bioinfo
+cp -r /src/MFIT5002_Group_Project/medinfo/ $GOPATH/src
+
 
 sudo -i #切换当前用户为root用户
 
