@@ -5,7 +5,7 @@ package controller
 import (
 	"net/http"
 	"encoding/json"
-	"Medinfo/service"
+	"medinfo/service"
 	"fmt"
 )
 
