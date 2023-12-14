@@ -44,7 +44,7 @@ func NewClientConn(
 		dialOpts = append(dialOpts, grpc.WithInsecure())
 	}
 
-	ctx, cancel := context.WithTimeout(context.Background(), dialTimeout)
+	ctx, cancel := context.WithTimeout(context.Background(), dialTimeout*5)
 	defer cancel()
 	return grpc.DialContext(ctx, address, dialOpts...)
 }
